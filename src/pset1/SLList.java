@@ -29,6 +29,10 @@ public class SLList {
 		// precondition: this.repOk()
 		// postcondition: adds <e> in a new node at the beginning of the
 		// list; the rest of the list is unmodified
-		// your code goes here
+
+		Node node = new Node();
+		node.elem = e;
+		node.next = this.header;
+		this.header = node;
 	}
 }

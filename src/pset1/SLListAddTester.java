@@ -14,7 +14,8 @@ public class SLListAddTester {
 		// of list and node objects reachable from l
 		
 		assertTrue(l.header != null);
-		// your code goes here
+		assertTrue(l.header.elem == true);
+		assertTrue(l.header.next == null);
 		
 	}
 	
@@ -31,7 +32,10 @@ public class SLListAddTester {
 		// of list and node objects reachable from l
 	
 		assertTrue(l.header != null);
-		// your code goes here
+		assertTrue(l.header.elem == false);
+		assertTrue(l.header.next != null);
+		assertTrue(l.header.next.elem == true);
+		assertTrue(l.header.next.next == null);
 	
 	}
 }
